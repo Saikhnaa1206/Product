@@ -52,7 +52,8 @@ const Page = () => {
   };
   const plus = () => {
     if (total / limit - num < 0) return;
-    selectedCategory !== "" ? setNum(0) : setNum(num + 1);
+    setNum(num + 1);
+    // selectedCategory !== "" ? setNum(0) : ;
   };
   return load === false ? (
     <div className="load">Loading...</div>
