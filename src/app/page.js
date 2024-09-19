@@ -16,7 +16,9 @@ const Page = () => {
     const JSONdata = await fetch(
       selectedCategory === ""
         ? `https://dummyjson.com/products?limit=${limit}&skip=${num * limit}`
-        : `https://dummyjson.com/products/category/${selectedCategory}`
+        : `https://dummyjson.com/products/category/${selectedCategory}?limit=${limit}&skip=${
+            num * limit
+          }`
     );
 
     setLoad(true);
