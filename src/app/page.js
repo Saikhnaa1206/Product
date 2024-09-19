@@ -51,7 +51,7 @@ const Page = () => {
     setNum(num - 1);
   };
   const plus = () => {
-    if (total / limit - num < 1) return;
+    if (total / limit - num <= 1) return;
     setNum(num + 1);
     // selectedCategory !== "" ? setNum(0) : ;
   };
